@@ -1,0 +1,50 @@
+.header
+	height: 100%
+	&__flex
+		height: inherit
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+	&__composition
+		flex-basis: 48%
+	&__logotype
+
+	&__download-btn
+		margin-top: 25px
+		display: inline-block
+		padding: 10px 28px
+		font-size: 0.9375rem
+		font-weight: 600
+		text-transform: capitalize
+		text-decoration: none
+		color: #fff
+		border: 2px solid #fff
+	&--title
+		padding-top: 25px
+		padding-bottom: 60px
+		font-family: Raleway
+		font-weight: 300
+		font-size: 2.25rem
+		text-transform: uppercase
+		color: #fff
+		line-height: 1.15
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: 22px
+			left: 0
+			height: 2px
+			width: 64px
+			background: #fff
+	&--description
+		font-family: Raleway
+		font-weight: 300
+		color: #fff
+		opacity: .8
+		word-spacing: 0.25rem
+		line-height: 1.5
+	&--bg
+		background-image: url('../../../img/header_bg.png')
+		background-size: cover
