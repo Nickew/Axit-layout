@@ -1,0 +1,75 @@
+.features
+	min-height: 595px
+	padding-top: 150px
+	&__flex
+		display: flex
+		justify-content: space-between
+	&__nav
+
+	&__nav-list
+		list-style-type: none
+		display: inline-flex
+		flex-direction: column
+	&__nav-item
+		background: #333
+		transition: all .25s
+		> a
+			min-height: 110px
+			max-height: 112px
+			min-width: 110px
+			max-width: 112px
+			display: flex
+			align-items: center
+			justify-content: center
+			color: #f5f5f5
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 0.9375rem
+			font-weight: 700
+		&:first-child
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+		&:last-child
+			border-bottom-left-radius: 5px
+			border-bottom-right-radius: 5px
+		&:hover
+			opacity: .9
+	&__nav-item--active
+		background: #ff8b38
+	&__tabs
+		
+	&__tab
+		width: 100%
+		max-width: 475px
+		height: 100%
+		max-height: 336px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+	&__tab-title
+		font-weight: 700
+		color: #000
+		font-size: 1.25rem
+		padding-bottom: 50px
+	&__tab-description
+		color: #86878b
+		font-size: 0.875rem
+		margin-top: 10px
+	&__tab-btn
+		margin-top: 50px
+		display: inline-flex
+		padding: 13px 22px
+		text-decoration: none
+		text-transform: capitalize
+		color: #f5f5f5
+		background: #ff8b38
+		border-radius: 3px
+		box-shadow: 0 1px 1px 0 rgba(#000, .25)
+		transition: all .25s
+		&:hover
+			filter: brightness(110%)
+	&__composition
+
+	&--bg
+		background: #f5f5f5
