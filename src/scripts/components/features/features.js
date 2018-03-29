@@ -1,4 +1,4 @@
-(function(){
+var features = (function(){
 
 	var data = {
 		elements: document.querySelectorAll('.features__nav-item'),

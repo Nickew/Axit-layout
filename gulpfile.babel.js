@@ -26,7 +26,7 @@ gulp.task('js', () => {
 gulp.task('full-js', ['js'], () => {
 	return gulp.src([
 			SRC_DIR + '/libs/jquery-3.3.1.min.js',
-			JS_DIR + '/common.min.js'
+			SRC_DIR + '/comp_js/common.min.js'
 		])
 		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
@@ -55,7 +55,7 @@ gulp.task('sass', () => {
 
 gulp.task('dev', ['sass', 'full-js', 'browser-sync'], () => {
 	gulp.watch([CSS_DIR + '/core.sass', CSS_DIR + '/**/**/*.sass', CSS_DIR + '/**/**/**/*.sass'], ['sass']);
-	gulp.watch([JS_DIR + '/**/*.js', JS_DIR + '/**/**/*.js'], ['full-js']);
+	gulp.watch(JS_DIR + '/**/**/*.js', ['full-js']);
 	gulp.watch(SRC_DIR + '/*.html', browserSync.reload);
 });
 
