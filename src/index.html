@@ -67,9 +67,9 @@ accumsan et viverra justo commodo.</p>
 		<div class="container features__flex">
 			<div class="features__nav">
 				<ul class="features__nav-list">
-					<li id="tab-btn1" class="features__nav-item features__nav-item--active"><a href="#">tab 1</a></li>
-					<li id="tab-btn2" class="features__nav-item"><a href="#">tab 2</a></li>
-					<li id="tab-btn3" class="features__nav-item"><a href="#">tab 3</a></li>
+					<li id="tab-btn1" class="features__nav-item features__nav-item--active"><a href="#" onclick="return false;">tab 1</a></li>
+					<li id="tab-btn2" class="features__nav-item"><a href="#" onclick="return false;">tab 2</a></li>
+					<li id="tab-btn3" class="features__nav-item"><a href="#" onclick="return false;">tab 3</a></li>
 				</ul>
 			</div>
 			<div class="features__tabs">
@@ -289,26 +289,44 @@ accumsan et viverra justo commodo.</p>
 		<div class="container contact__flex">
 			<div class="contact__header">
 				<h3 class="contact__title">contact us</h3>
-				<p class="contact__desc"></p>
+				<p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 			<div class="contact__feedback">
 				<form action="#" class="contact__form">
 					<div class="contact__form-container">
 						<div class="contact__form-sender">
 							<label for="name" class="contact__label"></label>
-							<input type="text" class="contact__input" id="name">
+							<input type="text" class="contact__input" id="name" placeholder="Name" required>
 							<label for="email" class="contact__label"></label>
-							<input type="text" class="contact__input" id="email">
+							<input type="text" class="contact__input" id="email" placeholder="Email">
 							<label for="subject" class="contact__label"></label>
-							<input type="text" class="contact__input" id="subject">
+							<input type="text" class="contact__input" id="subject" placeholder="Subject">
 						</div>
 						<div class="contact__form-message">
 							<label for="message" class="contact__label"></label>
-							<input type="text" class="contact__input contact__input--large" id="message">
+							<textarea type="text" class="contact__input contact__text-message" id="message" placeholder="Message" required></textarea>
 						</div>
 					</div>
 					<button class="contact__btn-submit">submit</button>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer footer--black">
+		<div class="container footer__flex">
+			<div class="footer__social">
+				<ul class="footer__social-list">
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-facebook-f"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-twitter"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-google-plus-g"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-pinterest"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-instagram"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fab fa-stumbleupon"></i></a></li>
+					<li class="footer__social-item"><a href="#"><i class="footer__social-icon fas fa-rss"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer__copyrights">
+				<span>HTML/CSS/JS Layout by Nickew © 2018 Axure Themes</span>
 			</div>
 		</div>
 	</div>
