@@ -39,11 +39,7 @@
 			.fa-instagram
 				width: 48px
 			.fa-instagram:hover
-				color: #fff
-				border-radius: 30%
-				padding: 5px
-				background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1)
+				color: red
 			.fa-stumbleupon:hover
 				color: #f74425
 			.fa-rss:hover
@@ -52,3 +48,10 @@
 	&--bg
 		background: #fff
 		box-shadow: 0 1px 3px 0 rgba(#000, .30)
+
+@media screen and (max-width: 800px)
+	.socialbar
+		&__header
+			display: none
+		&__list
+			padding-left: 0

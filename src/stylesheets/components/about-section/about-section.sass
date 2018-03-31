@@ -6,7 +6,8 @@
 		justify-content: space-between
 		align-items: flex-start
 	&__picture
-
+		width: 525px
+		height: 375px
 	&__content
 		max-width: 440px
 	&__title
@@ -15,14 +16,15 @@
 		font-size: 1.25rem
 		color: #212121
 		position: relative
+		padding-bottom: 60px
 		&:after
 			display: block
 			content: ''
 			width: 64px
 			height: 2px
 			background: #ff8b38
-			top: 0
-			margin: 30px 0
+			bottom: 30px
+			position: absolute
 	&__desc
 		font-size: 0.875rem
 		color: #86878b
@@ -54,4 +56,20 @@
 	color: #ff8b38
 	border: 2px solid #ff8b38
 	border-radius: 50%
+
+@media only screen and (max-width: 1024px)
+	.about-section
+		&__flex
+			padding-top: 50px
+			flex-direction: column
+			align-items: center
+		&__content
+			max-width: 100%
+		&__title, &__desc
+			text-align: center
+		&__title
+			&:after
+				left: 45%
+		&__item
+			padding-left: 25px
 

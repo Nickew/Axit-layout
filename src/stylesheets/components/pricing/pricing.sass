@@ -31,6 +31,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: flex-end
+		position: relative
 	&__payment
 		width: 31%
 		text-align: center
@@ -79,3 +80,35 @@
 		font-size: 0.875rem
 		background: #ff8b38
 		text-transform: uppercase
+	&__selected
+		min-width: 50%
+		margin: 0 50px
+	&__unselected
+		min-width: 50%
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			display: block
+			background: #fff
+			opacity: .7
+	&__slider-arrows
+		position: absolute
+		left: 0
+		top: 50%
+	&__slider-arrow
+		color: #000
+		font-size: 3rem
+		&--left
+			
+		&--right
+
+
+@media only screen and (max-width: 767px)
+	.pricing
+		&__payments
+			justify-content: center

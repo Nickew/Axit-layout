@@ -1,6 +1,5 @@
 var popular = (function(){
 
-		// targetId: document.querySelector('#most-popular')
 	var targetId = document.querySelector('#most-popular');
 
 	function _init() {
@@ -18,7 +17,5 @@ var popular = (function(){
 		var mostPopular = document.querySelector('.pricing__most-popular');
 		mostPopular.innerHTML = 'our most popular';
 	}
-
-
 
 })()
