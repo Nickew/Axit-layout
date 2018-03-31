@@ -1,5 +1,4 @@
 .pricing
-	min-height: 885px
 	background: #f5f5f5
 	&__flex
 		padding: 100px 0
@@ -32,6 +31,7 @@
 		justify-content: space-between
 		align-items: flex-end
 		position: relative
+		transition: all .25s
 	&__payment
 		width: 31%
 		text-align: center
@@ -80,35 +80,70 @@
 		font-size: 0.875rem
 		background: #ff8b38
 		text-transform: uppercase
-	&__selected
-		min-width: 50%
-		margin: 0 50px
-	&__unselected
-		min-width: 50%
-		position: relative
-		&:after
-			content: ''
-			position: absolute
-			left: 0
-			top: 0
-			width: 100%
-			height: 100%
-			display: block
-			background: #fff
-			opacity: .7
+	// &__selected
+	// 	min-width: 300px
+	// 	margin: 0 50px
+	// &__unselected
+	// 	min-width: 300px
+	// 	position: relative
+	// 	&:after
+	// 		content: ''
+	// 		position: absolute
+	// 		left: 0
+	// 		top: 0
+	// 		width: 100%
+	// 		height: 100%
+	// 		display: block
+	// 		background: #fff
+	// 		opacity: .7
+	// 	&:first-child
+
 	&__slider-arrows
+		display: none
 		position: absolute
-		left: 0
 		top: 50%
+		width: 100%
+		max-width: 600px
+		justify-content: space-around
 	&__slider-arrow
 		color: #000
-		font-size: 3rem
-		&--left
-			
-		&--right
+		font-size: 5rem
+		cursor: pointer
+	&__slider
+		margin: 0 auto
+		margin-top: 80px
+		position: relative
+		height: 500px
+		max-width: 600px
+		overflow: hidden
 
-
-@media only screen and (max-width: 767px)
+@media only screen and (min-width: 601px) and (max-width: 767px)
 	.pricing
 		&__payments
-			justify-content: center
+			padding-top: 0
+			white-space: nowrap
+			align-items: center
+			position: absolute
+			left: -225px
+			top: 0
+		&__slider-arrows
+			display: flex
+
+@media only screen and (max-width: 600px)
+	.pricing
+		&__payment
+			min-width: 100%!important
+		&__payments
+			left: 0
+			top: 0
+		&__slider
+			width: 100%
+			max-width: 100%
+			height: 100%
+			margin-top: 20px
+		&__slider-arrows
+			display: flex
+			justify-content: space-between
+			padding: 0 30px
+		&__flex
+			padding-bottom: 0
